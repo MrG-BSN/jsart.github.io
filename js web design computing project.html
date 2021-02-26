@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>JunSeok's Amazing Masterpieces</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="https://fonts.useso.com/css?family=Poppins">
+<style>
+
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64 w3-text-black"><b>JunSeok<br>Lee</b></h3>
+    <img src = "welsh-corgi.png">
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-text-black">Home</a> 
+    <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-text-black">Showcase</a> 
+    <a href="#What is it?" onclick="w3_close()" class="w3-bar-item w3-button w3-text-black">What is it?</a> 
+    <a href="#Artists" onclick="w3_close()" class="w3-bar-item w3-button w3-text-black">Artists</a> 
+    <a href="#packages" onclick="w3_close()" class="w3-bar-item w3-button w3-text-black">Sets</a> 
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-text-black">Contact</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Ry Cooder</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-jumbo w3-text-red"><b>My Masterpiece&nbsp</b><span style= "font-size:30%">Slammed on top of your face (I like Dogs) </span></h1>
+    <a href="https://thumbs.gfycat.com/ShamelessRedKissingbug-size_restricted.gif"><img src="dog.jpg" /></a> <h3 class="w3-xxxsmall w3-text-red"><b>Click on this dog!</b></h3>
+    <h1 class="w3-xxxlarge w3-text-red"><b>Collection</b></h1>
+    <hr style="width:50px;border:5px solid rgb(223, 10, 10)" class="w3-round">
+  </div>
+  
+  <!-- Photo grid (modal) -->
+  <div class="w3-row-padding">
+    <div class="w3-half">
+      <img src="Art 1.jpeg" style="width:100%" onclick="onClick(this)" alt="Concrete meets bricks">
+      <img src="Art 2.jpeg" style="width:100%" onclick="onClick(this)" alt="Light, white and tight scandinavian design">
+      <img src="Art 5.jpg" style="width:100%" onclick="onClick(this)" alt="White walls with designer chairs">
+    </div>
+
+    <div class="w3-half">
+      <img src="Art 4.jpeg" style="width:100%" onclick="onClick(this)" alt="Windows for the atrium">
+      <img src="Art 3.jpeg" style="width:100%" onclick="onClick(this)" alt="Bedroom and office in one space">
+      <img src="Art 6.jpg" style="width:100%" onclick="onClick(this)" alt="Scandinavian design">
+    </div>
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- What is it? -->
+  <div class="w3-container" id="What is it?" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>What is it?.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>These master pieces are a very exquisite piece of artwork</p>
+    <p>These pictures contain the blood, sweat and tears of Jun Seok, who is a very famous artist who can do several unspeakable
+      things. His art work is very personal, extremely beutiful and shows the beauty of life. His paintings will sell for a lot and
+      is sold at various auction houses for at least 1 million dollars.
+    </p>
+  </div>
+  
+  <!-- Artists -->
+  <div class="w3-container" id="Artists" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Artists.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>You like what you see?! Well look at our artists!</p>
+    <p>We are the artists of these beautiful pieces and we have spent hours on it to perfect these paintings. These paintings have 
+      our own type of meanings and they are all precious to us. they all have a meaning on the back and are like family to us. I
+      hope you like these paintings and consider buying one right now in our online auctions.
+    </p>
+    <p><b>Our artists are thoughtfully chosen from other dimensions</b>:</p>
+  </div>
+
+  <!-- The Team -->
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-lime">
+        <img src="Js .jpeg" alt="John" style="width:100%">
+        <div class="w3-container">
+          <h3>JunSeok Lee</h3>
+          <p class="w3-opacity">Main Artist</p>
+          <p>super cool and very good painter and is very artistically intelligent. Loves money and likes to talk</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-lime">
+        <img src="Js buisness.jpeg" alt="Jane" style="width:100%">
+        <div class="w3-container">
+          <h3>CowBoy JunSeok</h3>
+          <p class="w3-opacity">Second Artist</p>
+          <p>loves old paintings and always talks like a weird cowboy. The only language he speaks is Cowhuman language.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-lime">
+        <img src="js pop.png" alt="Js pop.jpg" style="width:100%">
+        <div class="w3-container">
+          <h3>HipHop JunSeok</h3>
+          <p class="w3-opacity">Third Artist</p>
+          <p>Loves pop and hiphop and always talks slang and is very exagerating in the yo and nah language</p>
+        </div>
+      </div>
+    </div>
+
+  <!-- Packages / Pricing Tables -->
+  <div class="w3-container" id="packages" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Sets</b><span style="font-size: 50%">&nbspwhat are they good for? .. absolutley nothin' except decoration.</span></h1>
+    <hr style="width:50px;border:5px solid rgb(223, 15, 15)" class="w3-round">
+    <p>Some text our prices. Paintings are good to have as it shows that you are rich and it also gives a good look at the house. These sets of paintings are beautiful and are great for decoration.</p>
+  </div>
+
+  <div class="w3-row-padding">
+    <div class="w3-half w3-margin-bottom">
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic</li>
+        <li class="w3-padding-16">painting 1</li>
+        <li class="w3-padding-16">painting 2 </li>
+        <li class="w3-padding-16">painting 3</li>
+        <li class="w3-padding-16">20% painting discount code</li>
+        <li class="w3-padding-16">4 painting equipment</li>
+        <li class="w3-padding-16">
+          <h2>$ 1M</h2>
+          <span class="w3-opacity">per 1M Dollars</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-white w3-padding-large w3-hover-black">Buy</button>
+        </li>
+      </ul>
+    </div>
+        
+    <div class="w3-half">
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-red w3-xlarge w3-padding-32">Pro</li>
+        <li class="w3-padding-16">painting 1</li>
+        <li class="w3-padding-16">painting 2</li>
+        <li class="w3-padding-16">painting 3</li>
+        <li class="w3-padding-16">painting 4 and 5</li>
+        <li class="w3-padding-16">20 painting equipments</li>
+        <li class="w3-padding-16">
+          <h2>$ 2M</h2>
+          <span class="w3-opacity">per 2M dollars</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-red w3-padding-large w3-hover-black">Buy</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+  
+  <!-- Contact -->
+  <div class="w3-container" id="contact" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Contact.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Do you want to make any changes? Contact us by filling in the information below! We will respond as sood as we can!</p>
+    <form action="/action_page.php" target="_blank">
+      <div class="w3-section">
+        <label>Dog Name</label>
+        <input class="w3-input w3-border" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">
+        <label>Cat Name</label>
+        <input class="w3-input w3-border" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">
+        <label>Massage</label>
+        <input class="w3-input w3-border" type="text" name="Message" required>
+      </div>
+      </a><button type="submit" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom">Send dooppydydopeidydoo <button onclick="window.location.href='https://w3docs.com';">Click Here</button>
+    </form>  
+  </div>
+
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Upgraded by <a href="https://cn.bing.com/?toWww=1&redig=2EC2E1A1B6E44B4F8E44AE9CDD592A61&ensearch=1&FORM=BEHPTB" title="bing.com" target="_blank" class="w3-hover-opacity">w3.css&nbsp</a>modified from <a href="https://www.w3schools.com/w3css/tryw3css_templates_interior_design.htm">'JunSeok'</a>&nbsptemplate 100% legit by JunSeok Lee @ BSN</p>
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
